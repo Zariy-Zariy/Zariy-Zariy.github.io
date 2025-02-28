@@ -1,0 +1,80 @@
+@font-face { font-family: "Mija"; src: url('static/fonts/Mija.otf'); } 
+
+*{
+    font-family: "Mija", serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.social-icons{
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-right: 5px;
+
+    height: 25px;
+    padding: 3px;
+}
+
+.social-icons:hover{
+    border-color: rgba(255, 255, 255, 1);
+}
+
+header{
+    background-color: rgb(0, 0, 180);
+    background-image: 
+        linear-gradient(
+            to right,
+            transparent,
+            transparent,
+            transparent,
+            rgb(0, 0, 150)),
+
+        linear-gradient(
+            transparent,
+            rgb(0, 0, 150)),
+
+        radial-gradient(
+            circle,
+            transparent 1rem,
+            rgb(0, 0, 180) 1rem),
+
+        linear-gradient(
+            rgb(20, 20, 225) .5rem,
+            transparent .5rem),
+
+        linear-gradient(
+            90deg,
+            rgb(20, 20, 225) .5rem,
+            transparent .5rem);
+
+    background-size: 100% 100%,100% 100%, 5rem 5rem,5rem 5rem,5rem 5rem;
+    background-position: 0 0, 0 0, 5.25rem 5.25rem, 2.5rem 2.5rem, 2.5rem 2.5rem;
+
+
+    color: white;
+    display:flex;
+    align-items: center;
+    padding: 30px;
+}
+
+#title{
+    flex-grow: 2;
+}
+
+#profile-picture{
+    max-height: 25vh;
+    max-width: 30vw;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    #profile-picture {
+      display: none;
+    }
+  }
