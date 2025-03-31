@@ -6,8 +6,12 @@
     --second-color: rgb(0, 0, 150);
     --cross-color: rgb(20, 20, 255);
     --accent-color: rgb(200, 55, 55);
+    --footer-color: rgb(128, 128, 128);
+    --alt-footer-colot: rgb(102, 102, 102);
 
     --border-radius: 5px;
+
+
 }
 
 
@@ -81,16 +85,20 @@ header{
     padding: 30px;
 }
 
-#zig-zag-edge{
+.zig-zag-edge{
     margin: 0;
-    height: 50px;
+    height: 19px;
     width: 100vw;
-    background-color: var(--second-color);
     mask-image: url("static/shapes/triangle.svg");
     mask-size: 50px;
     mask-position: 0 0;
     mask-repeat: repeat-x;
 
+}
+
+#zig-zag-header{
+    background-color: var(--second-color);
+    margin-bottom: 30px;
 }
 
 
@@ -158,7 +166,7 @@ article h1{
 
 }
 
-.pop-up a{
+a{
     color: white;
 
 }
@@ -172,6 +180,7 @@ article h1{
 .pop-up iframe{
     width: 95%;
     max-width: 650px;
+    display: block;
     aspect-ratio: 16/9;
     height: fit-content;
     border-radius: var(--border-radius);
@@ -216,7 +225,6 @@ article h1{
         margin-left: -10px;
         margin-right: -10px;
         margin-top: -10px;
-        background-color: var(--second-color);
         padding: 10px;
     }
 
@@ -225,4 +233,18 @@ article h1{
         width: 25px;
         height: 25px;
     }
-  }
+}
+
+footer{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+    background-image: linear-gradient(var(--footer-color), var(--alt-footer-colot));
+}
+
+#zig-zag-footer{
+    margin-top: 150px;
+    transform: rotate(180deg);
+    background-color: var(--footer-color)
+}
