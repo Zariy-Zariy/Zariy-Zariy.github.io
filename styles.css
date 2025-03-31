@@ -129,7 +129,7 @@ article h1{
 
 .achievement img{
     border-radius: var(--border-radius);
-    max-height: 100px;
+    max-height: 110px;
     max-width: 90%;
     margin: 10px;
 }
@@ -153,9 +153,32 @@ article h1{
     padding: 15px;
 
     border-radius: var(--border-radius);
-    background-color: var(--main-color);
+    background-color: var(--second-color);
     color: white;
 
+}
+
+.pop-up a{
+    color: white;
+
+}
+
+.pop-up h1{
+    color: white;
+    text-decoration: none;
+}
+
+
+.pop-up iframe{
+    width: 95%;
+    max-width: 650px;
+    aspect-ratio: 16/9;
+    height: fit-content;
+    border-radius: var(--border-radius);
+}
+
+.pop-up p{
+    font-size: 18px;
 }
 
 .show{
@@ -184,9 +207,17 @@ article h1{
 }
 
 @media only screen and (max-width: 600px) {
+    .pop-up {
+        height: 100%;
+        margin: 10px;
+    }
+
     #close-pop-button {
-      background-color: var(--second-color);
-      padding: 10px;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: -10px;
+        background-color: var(--second-color);
+        padding: 10px;
     }
 
     #close-pop-button img{
