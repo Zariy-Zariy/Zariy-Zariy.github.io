@@ -6,8 +6,8 @@
     --second-color: rgb(0, 0, 150);
     --cross-color: rgb(20, 20, 255);
     --accent-color: rgb(200, 55, 55);
-    --footer-color: rgb(128, 128, 128);
-    --alt-footer-colot: rgb(102, 102, 102);
+    --footer-color: rgb(115, 115, 115);
+    --alt-footer-color: rgb(85, 85, 85);
 
     --border-radius: 5px;
 
@@ -43,7 +43,7 @@ h1{
     padding: 3px;
 }
 
-.social-icons:hover, .achievement:hover{
+.social-icons:hover, .achievement:hover, .button:hover{
     filter: brightness(85%);
 }
 
@@ -240,11 +240,51 @@ footer{
     padding: 10px;
     text-align: center;
     height: 200px;
-    background-image: linear-gradient(var(--footer-color), var(--alt-footer-colot));
+    background-image: linear-gradient(var(--footer-color), var(--alt-footer-color));
 }
 
 #zig-zag-footer{
     margin-top: 150px;
     transform: rotate(180deg);
     background-color: var(--footer-color)
+}
+
+.button{
+    display: inline-block;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.button-secondary{
+    background-color: white;
+    color: var(--main-color);
+    padding: 8px;
+    border: 2px solid var(--main-color);
+}
+
+.button-disabled{
+    background-color: var(--alt-footer-color);
+}
+
+.project-item{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+
+.project-item img{
+    justify-content: center;
+    width: 90vw;
+    max-width: 500px;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-item{
+        flex-direction: column;
+    }
 }
